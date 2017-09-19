@@ -3,7 +3,7 @@
 
     "name": "Which host",
     "description": "show the IP of matched hostnames",
-    "version": "0.1",
+    "version": "0.2",
     "author": "loveky",
 
     "icons": {
