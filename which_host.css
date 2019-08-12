@@ -41,16 +41,19 @@
 
 #which-host-container .hostname {
     background: #337ab7;
-    margin-right: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 #which-host-container .ip {
     background: #5cb85c;
     margin-right: 2px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 #which-host-container .internal {
-    background: #f0ad4e;   
+    background: #f0ad4e;
 }
 
 #which-host-container .cache {
