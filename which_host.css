@@ -18,12 +18,20 @@
 }
 
 #which-host-container .item {
-    margin-top: 3px;
-    height: 19px;
+  height: 19px;
+  margin-bottom: 1px;
 }
 
-#which-host-container .item:first-child {
-    margin-top: 0;
+#which-host-container .item > *:first-child {
+  border-top-left-radius: .25em;
+  border-bottom-left-radius: .25em;
+  margin-left: 1px;
+}
+
+#which-host-container .item > *:last-child {
+  border-top-right-radius: .25em;
+  border-bottom-right-radius: .25em;
+  margin-right: 1px;
 }
 
 #which-host-container .hostname, .ip {
@@ -36,20 +44,14 @@
     text-align: center;
     white-space: nowrap;
     vertical-align: baseline;
-    border-radius: .25em;
 }
 
 #which-host-container .hostname {
     background: #337ab7;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
 }
 
 #which-host-container .ip {
     background: #5cb85c;
-    margin-right: 2px;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
 }
 
 #which-host-container .internal {
