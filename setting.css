@@ -4,7 +4,6 @@
 
 body {
 	width: 400px;
-	height: 400px;
 }
 
 textarea {
@@ -44,5 +43,7 @@ textarea {
 	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 	-webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	line-height: 1.42857143;
+  line-height: 1.42857143;
+  width: 100%;
+  box-sizing: border-box;
 }

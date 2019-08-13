@@ -22,10 +22,6 @@
             "js": ["which_host.js"]
         }
     ],
-    "permissions": [
-        "activeTab",
-        "https://ajax.googleapis.com/"
-    ],
     "background": {
         "scripts": ["background.js"]
     },
@@ -35,5 +31,5 @@
         "*://*/"
     ],
 
-    "homepage_url": "https://github.com/loveky/which_host"
+    "homepage_url": "https://github.com/jdf2e/which_host"
 }

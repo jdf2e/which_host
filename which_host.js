@@ -28,7 +28,7 @@ var getIPClassName = function (ip) {
 			return 'internal';
 		}
 
-		return ' ';
+		return 'ip';
 	}
 };
 
@@ -54,9 +54,9 @@ var render = function () {
 
 		container.addEventListener('mouseenter', toggleClass, false);
 	}
-	
+
 	Object.keys(cache).forEach(function (hostname) {
-		result.push('<div class="item"><span class="hostname">' + hostname + '</span>' + cache[hostname].map(function (ip) {return '<span class="ip ' + getIPClassName(ip) + '">' + ip + '</span>'}).join('') + '</div>');
+		result.push('<div class="item"><span class="which-host-badge hostname">' + hostname + '</span>' + cache[hostname].map(function (ip) {return '<span class="which-host-badge ' + getIPClassName(ip) + '">' + ip + '</span>'}).join('') + '</div>');
 	});
 
 	container.innerHTML = result.join(' ');

@@ -13,17 +13,19 @@ var getHostname = function (url) {
 var whiteList = [];
 
 var getConfig = function () {
-	var newWhiteList = [];
-	window.localStorage.getItem('config').split('\n').forEach(function (line) {
-		line = line.trim();
-		if (line.length > 0) {
-			try {
-				newWhiteList.push(new RegExp('^' + line + '$', 'i'));
-			} catch (e) {}
-		}
-
-	});
-	whiteList =  newWhiteList;
+  var newWhiteList = [];
+  const config = window.localStorage.getItem('config');
+  if( config ) {
+    config.split('\n').forEach(function (line) {
+      line = line.trim();
+      if (line.length > 0) {
+        try {
+          newWhiteList.push(new RegExp('^' + line + '$', 'i'));
+        } catch (e) {}
+      }
+    });
+    whiteList =  newWhiteList;
+  }
 };
 
 getConfig();
